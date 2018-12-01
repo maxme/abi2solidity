@@ -1,0 +1,64 @@
+{
+  "name": "abi2solidity",
+  "version": "0.1.1",
+  "description": "Converts an Ethereum ABI to a Solidity interface",
+  "author": {
+    "name": "Maxime Biais",
+    "email": "maxime.biais@gmail.com"
+  },
+  "main": "dist/abi2solidity.js",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^20.0.3",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "coveralls": "^2.13.1",
+    "del-cli": "^1.1.0",
+    "documentation": "4.0.0-rc.1",
+    "eslint": "^4.1.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "jest": "^19.0.2",
+    "jest-cli": "^20.0.0",
+    "solc": "0.4.25"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "dependencies": {
+    "commander": "^2.19.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "scripts": {
+    "start": "babel-node -- src/index.js",
+    "start-built": "node dist/index.js",
+    "build": "babel src -d dist",
+    "test": "jest",
+    "lint": "eslint src test",
+    "lint-fix": "yarn lint -- --fix",
+    "clean": "del dist",
+    "coverage": "yarn test -- --coverage",
+    "preversion": "yarn lint && yarn test && yarn build",
+    "prepublish": "yarn lint && yarn test && yarn build"
+  },
+  "eslintConfig": {
+    "extends": "airbnb",
+    "env": {
+      "jest": true,
+      "node": true
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "abi2solidity": "dist/index.js"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "constant": false,
+    "inputs": [],
+    "name": "f",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]
