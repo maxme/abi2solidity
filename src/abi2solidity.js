@@ -1,8 +1,5 @@
 import fs from 'fs';
 
-const HEADER = 'interface GeneratedInterface {\n';
-const FOOTER = '}\n';
-
 function getInOrOut(inputs) {
   let out = '';
   for (let i = 0; i < inputs.length; i += 1) {
@@ -58,6 +55,8 @@ function getMethodInterface(method) {
 }
 
 function ABI2Solidity(abi) {
+  const HEADER = 'interface GeneratedInterface {\n';
+  const FOOTER = '}\n';
   const jsonABI = JSON.parse(abi);
   let out = HEADER;
   for (let i = 0; i < jsonABI.length; i += 1) {

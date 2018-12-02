@@ -1,6 +1,6 @@
 {
   "name": "abi2solidity",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Converts an Ethereum ABI to a Solidity interface",
   "author": {
     "name": "Maxime Biais",
