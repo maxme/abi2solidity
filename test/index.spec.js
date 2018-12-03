@@ -27,20 +27,26 @@ describe('Check that empty ABI return empty interface', () => {
 
 describe('Test 1 with expected output', () => {
   it('returns solidity test1', () => {
-    expect(ABI2Solidity(getTestFile('test/test1-in.json'))).toBe(
-      getTestFile('test/test1-out.solidity'),
+    expect(ABI2Solidity(getTestFile('test/test1.abi'))).toBe(getTestFile('test/test1-out.sol'));
+  });
+});
+
+describe('Test OraclizeLib with custom struct returned with expected output', () => {
+  it('returns solidity test1', () => {
+    expect(ABI2Solidity(getTestFile('test/oraclizeLib.abi'))).toBe(
+      getTestFile('test/oraclizeLib-out.sol'),
     );
   });
 });
 
-describe('ABI -> Solidity -> ABI', () => {
+describe('ABI -> Solidity -> ABI - manually set', () => {
   // Test all ABI files
-  const testParams = ['test1', 'test2'];
+  const testParams = ['test/test1.abi', 'test/test2.abi'];
   for (let i = 0; i < testParams.length; i += 1) {
     (function (testSpec) {
       it('generates solidity from ABI then compiles it back to ABI and compare', () => {
-        const compiledAbi = compileAndGetABI(ABI2Solidity(getTestFile(`test/${testSpec}-in.json`)));
-        expect(filterABI(getTestFile(`test/${testSpec}-in.json`))).toEqual(filterABI(compiledAbi));
+        const compiledAbi = compileAndGetABI(ABI2Solidity(getTestFile(`${testSpec}`)));
+        expect(filterABI(getTestFile(`${testSpec}`))).toEqual(filterABI(compiledAbi));
       });
     }(testParams[i]));
   }
