@@ -1,0 +1,1 @@
+[{"anonymous":false,"inputs":[{"indexed":false,"name":"mask","type":"bytes32"}],"name":"log_bytemask","type":"event"}]

@@ -1,0 +1,1 @@
+[{"constant":true,"inputs":[],"name":"isNewPrice","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"origin","type":"uint256"},{"name":"current","type":"uint256"}],"name":"getNewPrice","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"}]

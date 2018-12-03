@@ -1,0 +1,1 @@
+[{"constant":true,"inputs":[],"name":"object","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_beneficiary","type":"address"}],"name":"buyObject","outputs":[],"payable":true,"stateMutability":"payable","type":"function"}]

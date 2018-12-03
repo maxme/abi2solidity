@@ -1,0 +1,1 @@
+[{"constant":false,"inputs":[{"name":"_id","type":"uint256"},{"name":"_accountIdFrom","type":"uint256"},{"name":"_accountIdTo","type":"uint256"},{"name":"_hashType","type":"uint16"},{"name":"_hash","type":"bytes32"},{"name":"_amount","type":"uint256"}],"name":"addTransaction","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}]

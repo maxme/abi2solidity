@@ -1,0 +1,1 @@
+[{"constant":false,"inputs":[{"name":"_party","type":"address"},{"name":"user_contract","type":"address"},{"name":"_start_date","type":"uint256"}],"name":"newContract","outputs":[{"name":"","type":"address"}],"payable":true,"stateMutability":"payable","type":"function"}]

@@ -1,0 +1,1 @@
+[{"constant":false,"inputs":[{"name":"oldContract","type":"address"}],"name":"setOldContractData","outputs":[],"payable":true,"stateMutability":"payable","type":"function"}]

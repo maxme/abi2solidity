@@ -1,0 +1,1 @@
+[{"constant":true,"inputs":[{"name":"_currency","type":"bytes32"}],"name":"read","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"}]

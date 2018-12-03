@@ -1,0 +1,1 @@
+[{"constant":true,"inputs":[{"name":"id","type":"uint16"}],"name":"GetPerSellInfo","outputs":[{"name":"","type":"uint16"},{"name":"price","type":"uint256"},{"name":"isOver","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"}]

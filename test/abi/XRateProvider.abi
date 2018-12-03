@@ -1,0 +1,1 @@
+[{"constant":false,"inputs":[],"name":"getRate","outputs":[{"name":"","type":"uint32"},{"name":"","type":"uint32"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[],"name":"getCode","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"nonpayable","type":"function"}]

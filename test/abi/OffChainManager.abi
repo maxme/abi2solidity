@@ -1,0 +1,1 @@
+[{"constant":true,"inputs":[{"name":"addr","type":"address"}],"name":"isToOffChainAddress","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"getOffChainRootAddress","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"}]

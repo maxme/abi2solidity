@@ -1,0 +1,1 @@
+[{"constant":true,"inputs":[{"name":"base","type":"address"},{"name":"quote","type":"address"},{"name":"buy","type":"bool"},{"name":"baseAmount","type":"uint256"},{"name":"quoteAmount","type":"uint256"}],"name":"checkPrice","outputs":[{"name":"result","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"}]

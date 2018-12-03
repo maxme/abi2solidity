@@ -1,0 +1,1 @@
+[{"constant":false,"inputs":[{"name":"","type":"uint256"},{"name":"","type":"address"}],"name":"userRollDice","outputs":[],"payable":true,"stateMutability":"payable","type":"function"}]

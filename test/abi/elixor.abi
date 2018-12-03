@@ -1,0 +1,1 @@
+[{"constant":false,"inputs":[{"name":"newParents","type":"address[]"},{"name":"newChildren","type":"address[]"}],"name":"importGenesisPairs","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}]

@@ -1,0 +1,1 @@
+[{"constant":false,"inputs":[{"name":"amount","type":"uint256"},{"name":"sender","type":"address"}],"name":"createAmountFromTmedForAddress","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}]

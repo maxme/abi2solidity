@@ -1,0 +1,1 @@
+[{"constant":true,"inputs":[],"name":"isContractMiniGame","outputs":[{"name":"_isContractMiniGame","type":"bool"}],"payable":false,"stateMutability":"pure","type":"function"},{"constant":false,"inputs":[],"name":"fallback","outputs":[],"payable":true,"stateMutability":"payable","type":"function"}]

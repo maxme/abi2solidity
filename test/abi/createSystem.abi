@@ -1,0 +1,1 @@
+[{"constant":false,"inputs":[{"name":"_name","type":"string"},{"name":"_ram","type":"uint8"},{"name":"_disk1","type":"uint8"}],"name":"createNewSystem","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}]

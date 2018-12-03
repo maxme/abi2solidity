@@ -1,0 +1,1 @@
+[{"constant":false,"inputs":[{"name":"addresses","type":"address[]"}],"name":"checkBalances","outputs":[{"name":"","type":"uint256[]"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"}]

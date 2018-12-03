@@ -1,0 +1,1 @@
+[{"constant":true,"inputs":[{"name":"cardId","type":"uint32"},{"name":"level","type":"uint32"}],"name":"getLevelConfig","outputs":[{"name":"atk","type":"uint32"},{"name":"defense","type":"uint32"},{"name":"atk_min","type":"uint32"},{"name":"atk_max","type":"uint32"}],"payable":false,"stateMutability":"view","type":"function"}]

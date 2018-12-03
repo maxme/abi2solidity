@@ -1,0 +1,1 @@
+[{"anonymous":false,"inputs":[{"indexed":false,"name":"newOwner","type":"address"}],"name":"LogSetOwner","type":"event"}]

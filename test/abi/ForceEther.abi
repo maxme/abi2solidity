@@ -1,0 +1,1 @@
+[{"constant":false,"inputs":[],"name":"Deposit","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[{"name":"destination","type":"address"}],"name":"Force","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}]

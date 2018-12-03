@@ -1,0 +1,1 @@
+[{"constant":false,"inputs":[{"name":"adr","type":"address"},{"name":"val","type":"uint256"}],"name":"prenesiKovance","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}]

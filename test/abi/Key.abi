@@ -1,0 +1,1 @@
+[{"constant":true,"inputs":[],"name":"key","outputs":[{"name":"","type":"bytes8"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"ad","type":"address"},{"name":"gas","type":"uint256"}],"name":"useKey","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}]

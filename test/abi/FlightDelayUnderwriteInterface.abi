@@ -1,0 +1,1 @@
+[{"constant":false,"inputs":[{"name":"_policyId","type":"uint256"},{"name":"_carrierFlightNumber","type":"bytes32"}],"name":"scheduleUnderwriteOraclizeCall","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}]

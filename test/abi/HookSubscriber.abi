@@ -1,0 +1,1 @@
+[{"constant":false,"inputs":[{"name":"token","type":"address"},{"name":"amount","type":"uint256"}],"name":"tradeExecuted","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}]

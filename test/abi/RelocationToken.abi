@@ -1,0 +1,1 @@
+[{"constant":false,"inputs":[{"name":"_creditor","type":"address"},{"name":"_balance","type":"uint256"}],"name":"recieveRelocation","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"}]

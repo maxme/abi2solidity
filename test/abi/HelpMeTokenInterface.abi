@@ -1,0 +1,1 @@
+[{"constant":false,"inputs":[{"name":"_a","type":"address"}],"name":"thankYou","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[],"name":"owner","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"nonpayable","type":"function"}]

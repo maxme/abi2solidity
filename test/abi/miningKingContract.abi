@@ -1,0 +1,1 @@
+[{"constant":false,"inputs":[],"name":"getKing","outputs":[{"name":"king","type":"address"}],"payable":false,"stateMutability":"nonpayable","type":"function"}]

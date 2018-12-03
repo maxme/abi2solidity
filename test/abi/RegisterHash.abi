@@ -1,0 +1,1 @@
+[{"constant":false,"inputs":[{"name":"hash","type":"string"}],"name":"setTimeStamp","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"hash","type":"string"}],"name":"checkHash","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"}]

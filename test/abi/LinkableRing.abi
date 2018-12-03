@@ -1,0 +1,1 @@
+[{"constant":true,"inputs":[],"name":"RING_SIZE","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"}]
