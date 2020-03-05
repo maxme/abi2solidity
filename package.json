@@ -30,7 +30,7 @@
     "node": ">=6.0.0"
   },
   "dependencies": {
-    "commander": "^2.19.0"
+    "commander": "^4.1.1"
   },
   "jest": {
     "testEnvironment": "node"
