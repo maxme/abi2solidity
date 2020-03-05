@@ -43,12 +43,12 @@ describe('ABI -> Solidity -> ABI - manually set', () => {
   // Test all ABI files
   const testParams = ['test/test1.abi', 'test/test2.abi'];
   for (let i = 0; i < testParams.length; i += 1) {
-    (function (testSpec) {
-      it('get Solidity interface then compiles it back to ABI and compare - ${testSpec}', () => {
+    ((testSpec) => {
+      it(`get Solidity interface then compiles it back to ABI and compare - ${testSpec}`, () => {
         const compiledAbi = compileAndGetABI(ABI2Solidity(getTestFile(`${testSpec}`)));
         expect(filterABI(getTestFile(`${testSpec}`))).toEqual(filterABI(compiledAbi));
       });
-    }(testParams[i]));
+    })(testParams[i]);
   }
 });
 
@@ -56,11 +56,11 @@ describe('ABI -> Solidity -> ABI - All *.abi files', () => {
   // Test all ABI files
   const testParams = fs.readdirSync('test/abi/').filter(filename => filename.endsWith('.abi'));
   for (let i = 0; i < testParams.length; i += 1) {
-    (function (testSpec) {
+    ((testSpec) => {
       it(`get Solidity interface then compiles it back to ABI and compare - ${testSpec}`, () => {
         const compiledAbi = compileAndGetABI(ABI2Solidity(getTestFile(`test/abi/${testSpec}`)));
         expect(filterABI(getTestFile(`test/abi/${testSpec}`))).toEqual(filterABI(compiledAbi));
       });
-    }(testParams[i]));
+    })(testParams[i]);
   }
 });
