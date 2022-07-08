@@ -1,1 +1,0 @@
-[{"constant":true,"inputs":[{"name":"_privateKey1","type":"string"},{"name":"_privateKey2","type":"string"}],"name":"GeneratePublicKey","outputs":[{"name":"publicKey","type":"bytes32"}],"payable":false,"stateMutability":"pure","type":"function"}]

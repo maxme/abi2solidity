@@ -1,1 +1,0 @@
-[{"constant":false,"inputs":[{"name":"_neWCoreAddress","type":"address"}],"name":"setCoreContract","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}]

@@ -1,1 +1,0 @@
-[{"constant":false,"inputs":[{"name":"heigh","type":"uint256"},{"name":"width","type":"uint256"}],"name":"getRectangleArea","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[],"name":"constructor","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}]

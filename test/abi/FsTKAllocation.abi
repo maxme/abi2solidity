@@ -1,1 +1,0 @@
-[{"constant":false,"inputs":[{"name":"_vestedAmount","type":"uint256"}],"name":"initialize","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}]

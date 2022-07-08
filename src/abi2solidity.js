@@ -1,9 +1,16 @@
 import fs from 'fs';
 
+function injectOutMemory(input) {
+  if (input === 'string' || input === 'address[]') {
+    return `${input} memory`;
+  }
+  return input;
+}
+
 function getInOrOut(inputs) {
   let out = '';
   for (let i = 0; i < inputs.length; i += 1) {
-    out += inputs[i].type;
+    out += injectOutMemory(inputs[i].type);
     if (inputs[i].name) {
       out += ` ${inputs[i].name}`;
     }
@@ -52,7 +59,7 @@ function getMethodInterface(method) {
   if (method.outputs && method.outputs.length > 0) {
     out.push('returns');
     out.push('(');
-    out.push(getInOrOut(method.outputs));
+    out.push(getInOrOut(method.outputs, true));
     out.push(')');
   }
   return out.join(' ');

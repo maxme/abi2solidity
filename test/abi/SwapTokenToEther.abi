@@ -1,1 +1,0 @@
-[{"constant":false,"inputs":[{"name":"proxy","type":"address"},{"name":"token","type":"address"},{"name":"tokenQty","type":"uint256"},{"name":"destAddress","type":"address"}],"name":"execSwap","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"nonpayable","type":"function"}]

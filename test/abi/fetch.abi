@@ -1,1 +1,0 @@
-[{"constant":false,"inputs":[{"name":"num","type":"uint256"}],"name":"getNum","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"nonpayable","type":"function"}]

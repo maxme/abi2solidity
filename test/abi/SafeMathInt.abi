@@ -1,1 +1,0 @@
-[{"constant":true,"inputs":[{"name":"a","type":"uint256"},{"name":"b","type":"int256"}],"name":"addInt","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"pure","type":"function"}]

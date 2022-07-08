@@ -1,1 +1,0 @@
-[{"constant":true,"inputs":[{"name":"_address","type":"address"}],"name":"isAddressVerified","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"}]

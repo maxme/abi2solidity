@@ -1,1 +1,0 @@
-[{"constant":false,"inputs":[{"name":"target","type":"address"}],"name":"SetAuth","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"target","type":"address"}],"name":"ClearAuth","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}]

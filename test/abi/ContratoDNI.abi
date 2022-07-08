@@ -1,1 +1,0 @@
-[{"constant":true,"inputs":[],"name":"Getter","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_dni","type":"uint256"}],"name":"Setter","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}]

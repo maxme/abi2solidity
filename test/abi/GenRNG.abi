@@ -1,1 +1,0 @@
-[{"constant":false,"inputs":[{"name":"_from","type":"address"},{"name":"_dragonID","type":"uint256"}],"name":"getNewGens","outputs":[{"name":"resultGen","type":"uint256[2]"}],"payable":false,"stateMutability":"nonpayable","type":"function"}]

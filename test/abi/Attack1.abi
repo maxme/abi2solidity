@@ -1,1 +1,0 @@
-[{"constant":true,"inputs":[],"name":"myNumber","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_num","type":"uint256"}],"name":"editNumber","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}]

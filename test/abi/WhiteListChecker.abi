@@ -1,1 +1,0 @@
-[{"constant":true,"inputs":[],"name":"whiteListContractAddress","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"whitelistcontract","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"}]

@@ -1,1 +1,0 @@
-[{"constant":false,"inputs":[{"name":"sender","type":"address"},{"name":"choice","type":"uint256"}],"name":"sendBet","outputs":[],"payable":true,"stateMutability":"payable","type":"function"}]
