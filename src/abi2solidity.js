@@ -32,14 +32,18 @@ function getMethodInterface(method) {
   out.push(')');
   // Functions in ABI are either public or external and there is no difference in the ABI
   out.push('external');
+
   // State mutability
   if (method.stateMutability === 'pure') {
     out.push('pure');
   } else if (method.stateMutability === 'view') {
     out.push('view');
-  } else if (method.stateMutability === 'pure') {
-    out.push('pure');
+  } else if (method.stateMutability === 'nonpayable') {
+    // do nothing
+  } else if (method.stateMutability === 'payable') {
+    out.push('payable');
   }
+
   // Payable
   if (method.payable) {
     out.push('payable');

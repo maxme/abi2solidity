@@ -51,17 +51,17 @@ describe('Test OraclizeLib with custom struct returned with expected output', ()
 
 describe('Test solidity 0.8.x example', () => {
   it('returns solidity 0.8.x abi', () => {
-    const data = getTestFile('test/test-solidity-v0.8.sol');
+    const data = getTestFile('test/test-solidity-v0.8.x.sol');
     const abi = compileAndGetABI(data);
     expect(ABI2Solidity(abi)).toBe(
-      getTestFile('test/test-solidity-v0.8.sol'),
+      getTestFile('test/test-solidity-v0.8.x.sol'),
     );
   });
 });
 
 describe('ABI -> Solidity -> ABI - manually set', () => {
   // Test all ABI files
-  const testParams = ['test/test1.abi', 'test/test2.abi', 'test/test-solidity-v0.8.abi'];
+  const testParams = ['test/test1.abi', 'test/test2.abi', 'test/test-solidity-v0.8.x.abi'];
   for (let i = 0; i < testParams.length; i += 1) {
     ((testSpec) => {
       it(`get Solidity interface then compiles it back to ABI and compare - ${testSpec}`, () => {
