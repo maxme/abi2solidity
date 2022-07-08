@@ -81,7 +81,7 @@ export function ABI2SolidityFiles(input, output) {
       console.log('------------ Solidity interface:');
       console.log(solidity);
     } else {
-      fs.writeFile(output, solidity, (err2) => {
+      fs.write(output, solidity, (err2) => {
         if (err2) console.error(err2);
       });
     }

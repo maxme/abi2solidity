@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import commander from 'commander';
 import { version } from '../package.json';
 import { ABI2SolidityFiles } from './abi2solidity';
@@ -11,15 +9,15 @@ function main() {
     .option('-o, --output <file>', 'Solidity output file', '')
     .parse(process.argv);
 
-  if (commander.input === '') {
+  if (commander.input === undefined) {
     console.log('Using stdin to READ ABI');
     commander.input = process.stdin.fd;
   }
 
-  if (commander.output === '') {
+  if (commander.output === undefined) {
     console.log('Using stdout to write Solidity interface');
+    commander.output = process.stdout.fd;
   }
-
   ABI2SolidityFiles(commander.input, commander.output);
 }
 
