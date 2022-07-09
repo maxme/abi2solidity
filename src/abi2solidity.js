@@ -54,10 +54,10 @@ function getMethodInterface(method) {
   return out.join(' ');
 }
 
-function ABI2Solidity(abi) {
-  const HEADER = 'interface GeneratedInterface {\n';
+function ABI2Solidity(abi, { name = 'GeneratedInterface' }) {
+  const HEADER = `interface ${name} {\n`;
   const FOOTER = '}\n';
-  const jsonABI = JSON.parse(abi);
+  const jsonABI = typeof abi == "string" ? JSON.parse(abi) : abi;
   let out = HEADER;
   for (let i = 0; i < jsonABI.length; i += 1) {
     const method = jsonABI[i];
