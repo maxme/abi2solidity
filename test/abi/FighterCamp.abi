@@ -1,1 +1,0 @@
-[{"constant":true,"inputs":[{"name":"_tokenId","type":"uint256"}],"name":"getFighter","outputs":[{"name":"","type":"uint32"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"isCamp","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"pure","type":"function"}]

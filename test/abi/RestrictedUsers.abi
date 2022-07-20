@@ -1,1 +1,0 @@
-[{"constant":true,"inputs":[],"name":"owner","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"arg_user","type":"address"}],"name":"addAuthorized","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}]

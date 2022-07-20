@@ -1,6 +1,6 @@
 {
   "name": "abi2solidity",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Converts an Ethereum ABI to a Solidity interface",
   "author": {
     "name": "Maxime Biais",
@@ -24,13 +24,13 @@
     "eslint-plugin-react": "^7.11.1",
     "jest": "^19.0.2",
     "jest-cli": "^20.0.0",
-    "solc": "0.4.25"
+    "solc": "0.8.15"
   },
   "engines": {
     "node": ">=6.0.0"
   },
   "dependencies": {
-    "commander": "^4.1.1"
+    "commander": "^9.3.0"
   },
   "jest": {
     "testEnvironment": "node"
@@ -46,13 +46,6 @@
     "coverage": "yarn test -- --coverage",
     "preversion": "yarn lint && yarn test && yarn build",
     "prepublish": "yarn lint && yarn test && yarn build"
-  },
-  "eslintConfig": {
-    "extends": "airbnb",
-    "env": {
-      "jest": true,
-      "node": true
-    }
   },
   "files": [
     "dist"

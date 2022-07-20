@@ -1,1 +1,0 @@
-[{"constant":true,"inputs":[],"name":"getRate","outputs":[{"name":"result","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"update","outputs":[],"payable":true,"stateMutability":"payable","type":"function"}]

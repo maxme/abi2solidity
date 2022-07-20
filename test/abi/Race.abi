@@ -1,1 +1,0 @@
-[{"constant":false,"inputs":[{"name":"id","type":"uint256"}],"name":"joinToTrack","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[],"name":"createTrack","outputs":[{"name":"id","type":"uint256"}],"payable":false,"stateMutability":"nonpayable","type":"function"}]

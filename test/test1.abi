@@ -1,35 +1,32 @@
 [
   {
-    "constant": false,
     "inputs": [
       {
         "name": "n",
-        "type": "uint8"
+        "type": "uint8",
+        "internalType": "uint8"
       }
     ],
     "name": "guess",
     "outputs": [],
-    "payable": true,
-    "stateMutability": "payable",
+    "stateMutability": "nonpayable",
     "type": "function"
   },
   {
-    "constant": true,
     "inputs": [],
     "name": "isComplete",
     "outputs": [
       {
         "name": "",
-        "type": "bool"
+        "type": "bool",
+        "internalType": "bool"
       }
     ],
-    "payable": false,
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [],
-    "payable": true,
     "stateMutability": "payable",
     "type": "constructor"
   }

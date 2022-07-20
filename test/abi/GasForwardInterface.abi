@@ -1,1 +1,0 @@
-[{"constant":false,"inputs":[{"name":"behalfOf","type":"address"},{"name":"cUsage","type":"uint256"}],"name":"forwardGas","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}]

@@ -1,1 +1,0 @@
-[{"constant":false,"inputs":[],"name":"leerGat","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"join","type":"uint256"}],"name":"createGato","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}]

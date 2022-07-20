@@ -1,1 +1,0 @@
-[{"constant":false,"inputs":[{"name":"agree","type":"bool"},{"name":"_tap","type":"uint256"}],"name":"onTapPollFinish","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"agree","type":"bool"}],"name":"onRefundPollFinish","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}]

@@ -1,1 +1,0 @@
-[{"constant":false,"inputs":[{"name":"arg","type":"uint256"}],"name":"createC1","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"arg","type":"uint256"},{"name":"amount","type":"uint256"}],"name":"createAndEndowC1","outputs":[],"payable":true,"stateMutability":"payable","type":"function"}]

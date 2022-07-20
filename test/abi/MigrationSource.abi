@@ -1,1 +1,0 @@
-[{"constant":false,"inputs":[{"name":"_addr","type":"address"}],"name":"vacate","outputs":[{"name":"o_balance","type":"uint256"}],"payable":false,"stateMutability":"nonpayable","type":"function"}]

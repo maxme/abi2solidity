@@ -1,1 +1,0 @@
-[{"constant":false,"inputs":[{"name":"_tokenContract","type":"address"}],"name":"retrieveTokens","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}]

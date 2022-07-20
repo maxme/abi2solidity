@@ -1,1 +1,0 @@
-[{"constant":false,"inputs":[{"name":"_participant","type":"address"},{"name":"_revenue","type":"uint256"}],"name":"payTo","outputs":[{"name":"","type":"bool"}],"payable":true,"stateMutability":"payable","type":"function"}]

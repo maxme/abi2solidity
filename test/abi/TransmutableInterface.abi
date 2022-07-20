@@ -1,1 +1,0 @@
-[{"constant":false,"inputs":[{"name":"_value","type":"uint256"}],"name":"transmuted","outputs":[{"name":"","type":"bool"},{"name":"","type":"uint256"}],"payable":false,"stateMutability":"nonpayable","type":"function"}]

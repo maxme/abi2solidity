@@ -1,1 +1,0 @@
-[{"constant":true,"inputs":[{"name":"salt","type":"bytes"},{"name":"data","type":"bytes"},{"name":"iterations","type":"uint256"}],"name":"hash","outputs":[{"name":"","type":"bytes32"}],"payable":false,"stateMutability":"pure","type":"function"}]

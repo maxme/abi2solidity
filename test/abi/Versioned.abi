@@ -1,1 +1,0 @@
-[{"constant":true,"inputs":[],"name":"version","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"inputs":[{"name":"_version","type":"string"}],"payable":false,"stateMutability":"nonpayable","type":"constructor"}]

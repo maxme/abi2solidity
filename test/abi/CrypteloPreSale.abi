@@ -1,1 +1,0 @@
-[{"constant":false,"inputs":[{"name":"_addr","type":"address"}],"name":"isWhiteList","outputs":[{"name":"_group","type":"uint256"}],"payable":false,"stateMutability":"nonpayable","type":"function"}]

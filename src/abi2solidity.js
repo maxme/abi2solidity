@@ -1,9 +1,16 @@
 import fs from 'fs';
 
+function injectOutMemory(input) {
+  if (input === 'string' || input === 'address[]') {
+    return `${input} memory`;
+  }
+  return input;
+}
+
 function getInOrOut(inputs) {
   let out = '';
   for (let i = 0; i < inputs.length; i += 1) {
-    out += inputs[i].type;
+    out += injectOutMemory(inputs[i].type);
     if (inputs[i].name) {
       out += ` ${inputs[i].name}`;
     }
@@ -32,14 +39,18 @@ function getMethodInterface(method) {
   out.push(')');
   // Functions in ABI are either public or external and there is no difference in the ABI
   out.push('external');
+
   // State mutability
   if (method.stateMutability === 'pure') {
     out.push('pure');
   } else if (method.stateMutability === 'view') {
     out.push('view');
-  } else if (method.stateMutability === 'pure') {
-    out.push('pure');
+  } else if (method.stateMutability === 'nonpayable') {
+    // do nothing
+  } else if (method.stateMutability === 'payable') {
+    out.push('payable');
   }
+
   // Payable
   if (method.payable) {
     out.push('payable');
@@ -48,7 +59,7 @@ function getMethodInterface(method) {
   if (method.outputs && method.outputs.length > 0) {
     out.push('returns');
     out.push('(');
-    out.push(getInOrOut(method.outputs));
+    out.push(getInOrOut(method.outputs, true));
     out.push(')');
   }
   return out.join(' ');
@@ -81,7 +92,7 @@ export function ABI2SolidityFiles(input, output) {
       console.log('------------ Solidity interface:');
       console.log(solidity);
     } else {
-      fs.writeFile(output, solidity, (err2) => {
+      fs.write(output, solidity, (err2) => {
         if (err2) console.error(err2);
       });
     }

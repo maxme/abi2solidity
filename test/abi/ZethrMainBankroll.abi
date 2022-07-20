@@ -1,1 +1,0 @@
-[{"constant":true,"inputs":[],"name":"gameGetTokenBankrollList","outputs":[{"name":"","type":"address[7]"}],"payable":false,"stateMutability":"view","type":"function"}]

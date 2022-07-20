@@ -1,1 +1,0 @@
-[{"constant":false,"inputs":[{"name":"_dragonOwner","type":"address"},{"name":"_yourDragonID","type":"uint256"},{"name":"_oppDragonID","type":"uint256"},{"name":"_endBlockNumber","type":"uint256"},{"name":"_priceSelectFight2Death","type":"uint256"}],"name":"addSelctFight2Death","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}]
