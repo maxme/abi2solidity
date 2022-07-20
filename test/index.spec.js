@@ -6,7 +6,7 @@ function getTestFile(filename) {
   return fs.readFileSync(filename, 'utf8');
 }
 
-function compileAndGetABI(soliditySource, pragma = '// SPDX-License-Identifier: MIT\npragma solidity >=0.8.0 <0.9.0;\n\n') {
+function compileAndGetABI(soliditySource, pragma = '') {
   const input = {
     language: 'Solidity',
     sources: {
@@ -31,7 +31,25 @@ function filterABI(stringAbi) {
 
 describe('Check that empty ABI return empty interface', () => {
   it('returns empty interface', () => {
-    expect(ABI2Solidity('[]')).toBe('interface GeneratedInterface {\n}\n');
+    expect(ABI2Solidity('[]')).toBe('// SPDX-License-Identifier: MIT\npragma solidity >=0.1.0 <0.9.0;\n\ninterface GeneratedInterface {\n}\n');
+  });
+});
+
+describe('Check the header can be empty', () => {
+  it('returns empty interface', () => {
+    expect(ABI2Solidity('[]', '')).toBe('interface GeneratedInterface {\n}\n');
+  });
+});
+
+describe('Check the interface name can be changed', () => {
+  it('returns empty interface with the name changed', () => {
+    expect(ABI2Solidity('[]', undefined, 'McNulty')).toBe('// SPDX-License-Identifier: MIT\npragma solidity >=0.1.0 <0.9.0;\n\ninterface McNulty {\n}\n');
+  });
+});
+
+describe('Check the interface name can be changed', () => {
+  it('returns empty interface with the name and header changed', () => {
+    expect(ABI2Solidity('[]', '', 'McNulty')).toBe('interface McNulty {\n}\n');
   });
 });
 

@@ -25,13 +25,18 @@ $ abi2solidity -h
 Usage: abi2solidity [options]
 
 Options:
-  -V, --version        output the version number
-  -i, --input <file>   JSON ABI Input file (default: "")
-  -o, --output <file>  Solidity output file (default: "")
-  -h, --help           output usage information
+  -V, --version                  output the version number
+  -i, --input <file>             JSON ABI Input file (default: "")
+  -o, --output <file>            Solidity output file (default: "")
+  -e, --header <string>          Set the header (default: "")
+  -n, --interface-name <string>  Set the interface name (default: "GeneratedInterface")
+  -h, --help                     display help for command
 
-# Example
+# Examples
 $ abi2solidity -i abi.json -o export.sol
+$ abi2solidity --header "" --interface-name McNulty < test/abi/SmolTest.abi
+$ abi2solidity --header "" --interface-name McNulty < test/abi/SmolTest.abi
+$ abi2solidity --header "`printf "// SPDX-License-Identifier: MIT\\npragma solidity >=0.1.0 <0.9.0;\n "`" --interface-name McNulty < test/abi/SmolTest.abi
 ```
 
 ## Code Usage

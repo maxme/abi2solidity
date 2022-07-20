@@ -65,11 +65,13 @@ function getMethodInterface(method) {
   return out.join(' ');
 }
 
-function ABI2Solidity(abi, name = 'GeneratedInterface') {
-  const HEADER = `interface ${name} {\n`;
+function ABI2Solidity(abi,
+  header = '// SPDX-License-Identifier: MIT\npragma solidity >=0.1.0 <0.9.0;\n\n',
+  interfaceName = 'GeneratedInterface') {
+  const INTERFACE_NAME = `interface ${interfaceName} {\n`;
   const FOOTER = '}\n';
   const jsonABI = typeof abi === 'string' ? JSON.parse(abi) : abi;
-  let out = HEADER;
+  let out = header + INTERFACE_NAME;
   for (let i = 0; i < jsonABI.length; i += 1) {
     const method = jsonABI[i];
     const methodString = getMethodInterface(method);
@@ -80,13 +82,13 @@ function ABI2Solidity(abi, name = 'GeneratedInterface') {
   return out + FOOTER;
 }
 
-export function ABI2SolidityFiles(input, output) {
+export function ABI2SolidityFiles(input, output, header, interfaceName) {
   fs.readFile(input, { encoding: 'utf8' }, (err, abi) => {
     if (err) {
       console.error(err);
       return;
     }
-    const solidity = ABI2Solidity(abi);
+    const solidity = ABI2Solidity(abi, header, interfaceName);
     if (output === '') {
       // default to stdout
       console.log('------------ Solidity interface:');
